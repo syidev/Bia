@@ -1,0 +1,122 @@
+@font-face {
+font-family: "Gotham";
+src: url(../font/gotham-rounded-medium.otf);
+}
+
+html, body {
+    width: auto;
+    height: auto;
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: "Gotham";
+    color: white;
+    margin: 0 auto
+  }
+.navbar {
+    width: 1000px;
+    height: 76px;
+    margin: 0 auto;
+    background: #c0272c;
+  }
+.main-menu {
+    float: left;
+    font-size: 21px;
+    padding: 0;
+  }
+
+.main-menu a {
+    display: inline-block;
+    padding: 25px 10px 25px 10px;
+    text-decoration: none;
+    color: white
+  }
+
+.main-menu a:hover {
+    background-color: #333333
+  }
+
+
+.icons {
+    float: right}
+
+.icons img {
+    display: inline-block;
+    padding-top: 18px;
+    padding-right: 10px}
+
+.welcome {
+    display: table;
+    margin: 0 auto;
+    width: 1000px;
+    height: 388px;
+    background-image: url(../images/soft_image.png);
+  }
+.s1 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 33px;
+    font-weight: 700}
+
+.s2 {
+    font-size: 17px}
+
+
+.our-portfolio {
+    display: table;
+    height: 38px;
+    width: 124px;
+    background-color: #c0272c;
+    font-size: 17px;
+    text-align: center;
+    margin: -19px auto;
+    opacity: 0.99;}
+
+.our-portfolio div {
+    display: table-cell;
+    vertical-align: middle}
+
+.pic_portfolio {
+    margin-left:auto;
+    margin-right:auto;
+    width: 1000px;
+    height: 802px;
+    background-color: white}
+
+.pic_project {
+    margin: 0;
+    padding-top: 19px;
+    text-align: center}
+
+.pic_project img {
+    padding: 20px}
+
+footer {
+    background-color: #c0272c;
+    width: 1000px;
+    height: 151px;
+    margin-left:auto;
+    margin-right:auto}
+
+footer div {
+    display: inline-block;
+    width: 318px;
+    height: auto;
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 17px;
+}
+footer span {
+    font-size: 12px;
+    font-weight: 300 bold;
+  }
+.pic {
+    padding-right: 5px;
+    vertical-align: middle}
+
+.project {
+   padding-top: 15px;
+ }
