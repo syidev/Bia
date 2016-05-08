@@ -1,0 +1,276 @@
+.portfolio {
+	padding-top: 10px;
+	background: $portfolioBackground;
+	text-transform: uppercase;
+	color: white;	
+}
+
+.portfolio__title {	
+	margin-bottom: 0;
+	font-family: $mainFont;
+	font-size: 3em;	
+}
+
+.portfolio__subtitle {
+	margin-top: -5px;
+	margin-bottom: 45px;
+	font-family: $mainFont;
+	font-size: 1.5em;	
+	letter-spacing: .7px;
+}
+
+
+.portfolio__container {
+    display: flex;
+    flex-wrap:wrap; 
+    padding: 0 10px;   
+}
+
+.portfolio__item {
+  height: 255px;
+  width: 25%;
+  background: grey no-repeat center;
+  background-size: cover;
+  position: relative;
+  
+  &:hover {
+    .portfolio__mask {
+      opacity: 1;
+    }
+  }
+}
+
+.portfolio__item-1 {
+	width: 50%;
+  background-image: url(../img/1.jpg);
+}
+.portfolio__item-2 {
+	width: 50%;
+  background-image: url(../img/2.jpg);
+}
+.portfolio__item-3 {
+	width: 50%;
+  background-image: url(../img/3.jpg);
+}
+.portfolio__item-4 {
+	width: 50%;
+  background-image: url(../img/4.jpg);
+}
+.portfolio__item-5 {
+	width: 25%;
+	height: 350px;
+  background-image: url(../img/5.jpg);
+}
+.portfolio__item-6 {
+	width: 25%;
+	height: 350px;
+  background-image: url(../img/6.jpg);
+}
+.portfolio__item-7 {
+	width: 25%;
+	height: 350px;
+  background-image: url(../img/7.jpg);
+}
+.portfolio__item-8 {
+	width: 25%;
+	height: 350px;
+  background-image: url(../img/8.jpg);
+}
+.portfolio__item-9 {
+	width: 25%;
+	height: 235px;
+  background-image: url(../img/people235.png);
+}
+.portfolio__item-10 {
+	width: 25%;
+	height: 235px;
+  background-image: url(../img/people235-1.png); 
+}
+.portfolio__item-11 {
+	width: 25%;
+	height: 235px;
+  background-image: url(../img/people235-2.png);
+}
+.portfolio__item-12 {
+	width: 25%;
+	height: 235px;
+  background-image: url(../img/people235-3.png);  
+}
+.portfolio__item-13 {
+	width: 50%;
+	height: 235px;
+  background-image: url(../img/people-big-235.png);
+  
+}
+.portfolio__item-14 {
+  background-image: url(../img/people235-4.png);
+  width: 25%;
+  height: 235px;
+}
+.portfolio__item-15 {
+	width: 25%;
+	height: 235px;
+  background-image: url(../img/people235-5.png); 
+}
+.portfolio__item-16 {
+	width: 25%;
+	height: 235px;
+  background-image: url(../img/people235-6.png); 
+}
+.portfolio__item-17 {
+	width: 25%;
+	height: 235px;
+  background-image: url(../img/people235-7.png);
+  
+}
+.portfolio__item-18 {
+  background-image: url(../img/people-big-235-2.png);
+  width: 50%;
+  height: 235px;
+}
+
+@media only screen and (max-width : 1100px) {  
+      .portfolio__item {
+        width: 100%;
+      }
+    } 
+
+.portfolio__item.small {
+		&:hover {
+		.portfolio__link--polaroid,
+		.portfolio__link--link,
+		.portfolio__link--info,
+		.portfolio__link--like {  
+  		width: 23.5%;  	
+  		margin-bottom: 0;	
+  	}
+  	.portfolio__link--zoom {
+  		height: 68%;
+  	}
+  	.portfolio__mask {
+  		padding-bottom: 0px;
+  	}
+	}
+}
+
+.portfolio__item.big350 {
+	&:hover {
+		.portfolio__link--polaroid,
+		.portfolio__link--link,
+		.portfolio__link--info,
+		.portfolio__link--like {  
+  		width: 25%;  	
+  		margin-top: 20px;	
+  	}
+  	.portfolio__link--zoom {
+  		height: 68%;
+  	}
+  	.portfolio__mask {
+  		padding-bottom: 0px;
+  	}
+	}
+}
+
+.portfolio__mask {
+  position: absolute;
+  background-color: rgba(101, 186, 153, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  padding-bottom: 30px;
+  opacity: 0;
+}
+.portfolio__link {
+  display: inline-block;
+  width: 14%;
+  height: 25%;
+  background: no-repeat center;
+
+  @media only screen and (max-width : 768px) {
+    width: 25%;
+  }
+  
+  &:hover {
+    &:not(:first-child) {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+  &--zoom {
+    width: 100%;
+    height: 85%;
+    background-image: url(../img/zoom.png);
+    background-position: 50% 75%;
+  }
+  &--polaroid {
+    background-image: url(../img/polaroid.png);   
+  }
+  &--link {
+    background-image: url(../img/link.png);
+  }
+  &--info {
+    background-image: url(../img/info.png);
+  }
+  &--like {
+    background-image: url(../img/like.png);
+  }
+	}
+
+
+.portfolio__footer {	
+	margin-top: 100px;
+	padding-top: 100px;
+	height: 300px;
+	background: url('../img/portfolio-photo.png') no-repeat 50% 50%;
+	background-size: cover;
+	letter-spacing: .3px;
+}
+
+.portfolio__footer--quote {	
+	font-family: $mainFont;
+	font-size: 2.25em;
+}
+
+.quote {
+    display:flex;
+    flex-direction: column;
+		position: relative;
+}
+
+.quote::before {
+	content: ',,';
+	position: absolute;	
+	width: 26px; 
+  height:26px;
+	top: 73px;
+	left: 6.5%;	
+	font-family: $mainFont;
+	font-size: 6.75em;
+	transform: rotate(180deg);
+}
+
+.quote::after {
+	content: ',,';
+	position: absolute;
+	width: 26px;
+  height:26px;
+	top: 150px;
+	right: 8%;	
+	font-family: $mainFont;
+	font-size: 6.25em;
+	transform: scale(1, -1);
+}
+
+.portfolio__footer--quote-author {
+	margin-top: 18px;
+	padding-right: 13%;
+	text-align: right;
+	font-family: $mainFont;
+	font-size: 1.5em;
+}
+
+
+@media only screen and (min-width : 768px) {
+
+}
