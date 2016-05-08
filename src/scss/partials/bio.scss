@@ -1,0 +1,63 @@
+.bio {
+	padding-top: 40px;
+	background: $bioBg;
+	color: white;
+
+	.socials {	
+	margin-top: 10px;	
+		justify-content: center;
+		padding-left: 0;		
+		@media only screen and (min-width : 768px) {		
+			margin-bottom:80px;
+		}
+
+		.socials--item {
+			margin: 0 7.5px;
+		}
+	}
+}
+
+.bio__header {
+	margin-bottom: 43px;
+	font-family: $mainFont;
+	font-size: 3em;
+	color: black;	
+}
+
+.bio__name {
+	margin-bottom: 30px;
+	font-family: $mainFont;
+	text-transform: uppercase;
+	font-size: 2.25em;
+	@media only screen and (min-width : 768px) {		
+			margin-top: -5px;
+			margin-left: -5px;
+			margin-bottom:25px;
+	}
+}
+
+.bio__title {
+	font-family: $mainFont;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	@media only screen and (min-width : 768px) {		
+		padding-top: 7px;
+		margin-left: 15px;
+		text-align: left;
+	}
+}
+
+.bio__text {
+	padding-bottom: 20px;
+@media only screen and (min-width : 768px) {
+		padding-bottom: 0;		
+		padding-top: 10px;
+		margin-top: 3px;
+		margin-bottom: 0;
+		margin-left: 10px;		
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: .7px;
+		text-align: left;
+	}
+}
